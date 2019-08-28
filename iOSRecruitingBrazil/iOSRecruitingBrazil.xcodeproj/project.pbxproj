@@ -12,9 +12,11 @@
 		0FA681BF2316E62F00E67FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA681BD2316E62F00E67FA8 /* Main.storyboard */; };
 		0FA681C12316E63000E67FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA681C02316E63000E67FA8 /* Assets.xcassets */; };
 		0FA681C42316E63000E67FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA681C22316E63000E67FA8 /* LaunchScreen.storyboard */; };
+		3A6B304A4FA013D634E5C4B8 /* Pods_iOSRecruitingBrazil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76609391F6796C9330EC90D4 /* Pods_iOSRecruitingBrazil.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DDB3D6C46417C9FB7A71F0D /* Pods-iOSRecruitingBrazil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRecruitingBrazil.debug.xcconfig"; path = "Target Support Files/Pods-iOSRecruitingBrazil/Pods-iOSRecruitingBrazil.debug.xcconfig"; sourceTree = "<group>"; };
 		0FA681B62316E62F00E67FA8 /* iOSRecruitingBrazil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSRecruitingBrazil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA681B92316E62F00E67FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA681BB2316E62F00E67FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		0FA681C02316E63000E67FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA681C32316E63000E67FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA681C52316E63000E67FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76609391F6796C9330EC90D4 /* Pods_iOSRecruitingBrazil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSRecruitingBrazil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83787B7C3DA648BD627DB19 /* Pods-iOSRecruitingBrazil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRecruitingBrazil.release.xcconfig"; path = "Target Support Files/Pods-iOSRecruitingBrazil/Pods-iOSRecruitingBrazil.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6B304A4FA013D634E5C4B8 /* Pods_iOSRecruitingBrazil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0FA681B82316E62F00E67FA8 /* iOSRecruitingBrazil */,
 				0FA681B72316E62F00E67FA8 /* Products */,
+				8FE7A477CCEE82B9739E4290 /* Pods */,
+				6D9C7C9A1B09075CD79EC925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,24 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		6D9C7C9A1B09075CD79EC925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76609391F6796C9330EC90D4 /* Pods_iOSRecruitingBrazil.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FE7A477CCEE82B9739E4290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DDB3D6C46417C9FB7A71F0D /* Pods-iOSRecruitingBrazil.debug.xcconfig */,
+				E83787B7C3DA648BD627DB19 /* Pods-iOSRecruitingBrazil.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA681C82316E63000E67FA8 /* Build configuration list for PBXNativeTarget "iOSRecruitingBrazil" */;
 			buildPhases = (
+				B326AE151EB06A2A6CD8D771 /* [CP] Check Pods Manifest.lock */,
 				0FA681B22316E62F00E67FA8 /* Sources */,
 				0FA681B32316E62F00E67FA8 /* Frameworks */,
 				0FA681B42316E62F00E67FA8 /* Resources */,
+				50953FEE5BB4EA100325FC7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50953FEE5BB4EA100325FC7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSRecruitingBrazil/Pods-iOSRecruitingBrazil-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSRecruitingBrazil/Pods-iOSRecruitingBrazil-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSRecruitingBrazil/Pods-iOSRecruitingBrazil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B326AE151EB06A2A6CD8D771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSRecruitingBrazil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FA681B22316E62F00E67FA8 /* Sources */ = {
@@ -296,6 +365,7 @@
 		};
 		0FA681C92316E63000E67FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDB3D6C46417C9FB7A71F0D /* Pods-iOSRecruitingBrazil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +384,7 @@
 		};
 		0FA681CA2316E63000E67FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83787B7C3DA648BD627DB19 /* Pods-iOSRecruitingBrazil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
