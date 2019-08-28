@@ -54,6 +54,8 @@
 		0FA681B82316E62F00E67FA8 /* iOSRecruitingBrazil */ = {
 			isa = PBXGroup;
 			children = (
+				0FA681CC2316FA1D00E67FA8 /* API */,
+				0FA681CB2316FA0000E67FA8 /* Model */,
 				0FA681B92316E62F00E67FA8 /* AppDelegate.swift */,
 				0FA681BB2316E62F00E67FA8 /* ViewController.swift */,
 				0FA681BD2316E62F00E67FA8 /* Main.storyboard */,
@@ -62,6 +64,20 @@
 				0FA681C52316E63000E67FA8 /* Info.plist */,
 			);
 			path = iOSRecruitingBrazil;
+			sourceTree = "<group>";
+		};
+		0FA681CB2316FA0000E67FA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FA681CC2316FA1D00E67FA8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
